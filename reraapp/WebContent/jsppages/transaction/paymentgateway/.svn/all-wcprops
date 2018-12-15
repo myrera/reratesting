@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/reraApp/!svn/ver/21814/reraApp/WebContent/jsppages/transaction/paymentgateway
+END
+paymentFailure.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/reraApp/!svn/ver/21814/reraApp/WebContent/jsppages/transaction/paymentgateway/paymentFailure.jsp
+END
+paymentGatewayForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/reraApp/!svn/ver/21812/reraApp/WebContent/jsppages/transaction/paymentgateway/paymentGatewayForm.jsp
+END

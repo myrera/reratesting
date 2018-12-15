@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+  "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">  
+<tiles-definitions>  
+
+ 
+   <!-- Base Definition for Admin users-->
+   <definition name="project-definition" 
+       template="/jsppages/transaction/admin/template/adminLayout.jsp">  
+       <put-attribute name="title" value="" />  
+      <put-attribute name="header"
+			value="/jsppages/template/internalpages/defaultHeader.jsp" />
+			 <put-attribute name="body" value="" />  
+       <put-attribute name="bfooter" value="/jsppages/transaction/admin/template/adminFooter.jsp" />  
+       
+   </definition>  
+   
+    <!-- Base Definition for Authority Users -->
+     <definition name="agent-definition" 
+       template="/jsppages/transaction/admin/template/adminLayout.jsp">  
+       <put-attribute name="title" value="" />  
+     <put-attribute name="header"
+			value="/jsppages/template/internalpages/defaultHeader.jsp" />
+			  <put-attribute name="body" value="" />  
+       <put-attribute name="bfooter" value="/jsppages/transaction/admin/template/adminFooter.jsp" />  
+    </definition>  
+   
+   
+  
+    <!--project start Dashboard Page -->
+   <definition name="project.dashbordIndv" extends="project-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/jsppages/transaction/project/dashboardIndv.jsp" />  
+   </definition> 
+   <definition name="project.dashbordComp" extends="project-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/jsppages/transaction/project/dashboardComp.jsp" />  
+   </definition> 
+   
+    <definition name="project.projectDetails" extends="project-definition">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/project/projectDetails.jsp" />  
+   </definition> 
+   
+     <definition name="project.paymentDetails" extends="project-definition">  
+       <put-attribute name="title" value="Payment Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/project/paymentDetails.jsp" />  
+   </definition>
+   
+       <definition name="project.developmentDetails" extends="project-definition">  
+       <put-attribute name="title" value="Development Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/project/developmentDetails.jsp" />  
+   </definition>
+   
+       <definition name="project.projectVendors" extends="project-definition">  
+       <put-attribute name="title" value="Vendor List" />  
+       <put-attribute name="body" value="/jsppages/transaction/project/projectVendors.jsp" />  
+   </definition>
+   
+       <definition name="project.projectDocuments" extends="project-definition">  
+       <put-attribute name="title" value="Project Documents" />  
+       <put-attribute name="body" value="/jsppages/transaction/project/projectDocuments.jsp" />  
+   </definition>
+     <definition name="project.projectPhotosPage" extends="project-definition">  
+       <put-attribute name="title" value="Project Photos" />  
+       <put-attribute name="body" value="/jsppages/transaction/project/projectPhotos.jsp" />  
+   </definition>
+                        
+     <definition name="project.registrationExtForm" extends="project-definition">  
+       <put-attribute name="title" value="Registration Extension" />  
+       <put-attribute name="body" value="/jsppages/transaction/project/projectRegExtensionForm.jsp" />  
+   </definition>
+   
+    <definition name="project.confirmationPage" extends="project-definition">  
+       <put-attribute name="title" value="Registration Extension" />  
+       <put-attribute name="body" value="/jsppages/transaction/project/projectConfirmation.jsp" />  
+   </definition>
+   
+      <definition name="project.changePassword" extends="project-definition">  
+       <put-attribute name="title" value="Change Password" />  
+       <put-attribute name="body" value="/jsppages/transaction/project/changePassword.jsp" />  
+   </definition>
+     <!--project End Dashboard Page -->
+     
+     
+     
+    <!--Agent Dashboard Page -->
+   <definition name="agent.dashbordIndv" extends="agent-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/jsppages/transaction/agent/dashboardIndv.jsp" />  
+   </definition> 
+   
+    <definition name="agent.dashbordComp" extends="agent-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/jsppages/transaction/agent/dashboardComp.jsp" />  
+   </definition> 
+   
+    <definition name="agent.agentDocuments" extends="agent-definition">  
+       <put-attribute name="title" value="Agent Documents" />  
+       <put-attribute name="body" value="/jsppages/transaction/agent/agentDocuments.jsp" />  
+   </definition> 
+   
+    <definition name="agent.paymentDetails" extends="agent-definition">  
+       <put-attribute name="title" value="Payment Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/agent/paymentDetails.jsp" />  
+   </definition> 
+  
+    <definition name="agent.projectList" extends="agent-definition">  
+       <put-attribute name="title" value="Project List" />  
+       <put-attribute name="body" value="/jsppages/transaction/agent/projectList.jsp" />  
+   </definition> 
+      
+   <definition name="agent.regRenewalForm" extends="agent-definition">  
+       <put-attribute name="title" value="Registration Renewal Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/agent/agentRegRenewlForm.jsp" />  
+   </definition> 
+   
+     
+    <definition name="agent.confirmationPage" extends="project-definition">  
+       <put-attribute name="title" value="Registration Renewal Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/agent/agentConfirmation.jsp" />  
+   </definition>
+   
+    <definition name="agent.changePassword" extends="agent-definition">  
+       <put-attribute name="title" value="Change  Password" />  
+       <put-attribute name="body" value="/jsppages/transaction/agent/changePassword.jsp" />  
+   </definition> 
+</tiles-definitions>

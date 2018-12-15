@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+  "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">  
+
+<tiles-definitions>  
+ 
+   <!-- Base Definition -->
+   <definition name="agent-definition-internal" 
+       template="/jsppages/template/internalpages/layout/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/jsppages/template/internalpages/defaultHeader.jsp" />  
+       <put-attribute name="banner" value="/jsppages/template/internalpages/banner.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="bfooter" value="/jsppages/template/internalpages/defaultFooter.jsp" />  
+       
+   </definition>  
+ 
+     
+  <!-- AGENT REGISTRATION START -->
+ 
+   
+   <definition name="agentRegistration" extends="agent-definition-internal">  
+       <put-attribute name="title" value="Agent Registration" />  
+       <put-attribute name="body" value="/jsppages/transaction/agentregistration/agentReg.jsp" />  
+   </definition> 
+   
+   <definition name="newAgentIndividualForm" extends="agent-definition-internal">  
+       <put-attribute name="title" value="Agent  Registration Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/agentregistration/agentReg.jsp" />  
+   </definition>
+   
+    <definition name="agentRegInvForm" extends="agent-definition-internal">  
+       <put-attribute name="title" value="Agent  Registration Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/agentregistration/agentRegistrationIndvForm.jsp" />  
+   </definition>
+   
+   <definition name="editAgentRegInvForm" extends="agent-definition-internal">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/jsppages/transaction/agentregistration/editAgentRegIndviForm.jsp" />  
+   </definition>
+   
+     <definition name="agentRegComForm" extends="agent-definition-internal">  
+       <put-attribute name="title" value="Agent  Registration Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/agentregistration/agentRegistrationCompanyForm.jsp" />  
+   </definition> 
+   
+    <definition name="editAgentRegComForm" extends="agent-definition-internal">  
+       <put-attribute name="title" value="Agent  Registration Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/agentregistration/editAgentRegistrationCompanyForm.jsp" />  
+   </definition>
+   
+    
+   
+     <definition name="agentRegUploadform" extends="agent-definition-internal">  
+       <put-attribute name="title" value="Agent  Registration Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/agentregistration/agentRegistrationUploadForm.jsp"/>  
+   </definition> 
+   
+   
+   <definition name="agentPayment" extends="agent-definition-internal">  
+       <put-attribute name="title" value="Agent  Registration Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/agentregistration/agentRegistrationPaymentForm.jsp" />  
+   </definition> 
+   
+   <definition name="agentRegSuccessfully" extends="agent-definition-internal">  
+       <put-attribute name="title" value="Agent  Registration Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/agentregistration/agentRegistrationConfirmForm.jsp" />  
+   </definition>
+  
+  
+   <definition name="editAgentDocUploadFrom" extends="agent-definition-internal">  
+       <put-attribute name="title" value="Agent  Registration Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/agentregistration/editAgentDocForm.jsp" />  
+   </definition>
+  
+   <!-- AGENT REGISTRATION END -->   
+       
+       <definition name="previewIndAgentFrom" extends="agent-definition-internal">  
+       <put-attribute name="title" value="Agent  Registration Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/agentregistration/previewtAgentRegIndviForm.jsp" />  
+   </definition>
+   
+     <definition name="previewFirmAgentFrom" extends="agent-definition-internal">  
+       <put-attribute name="title" value="Agent  Registration Form" />  
+       <put-attribute name="body" value="/jsppages/transaction/agentregistration/previewAgentRegistrationCompanyForm.jsp" />  
+   </definition>
+ 
+</tiles-definitions>

@@ -1,0 +1,25 @@
+# config
+
+#Andman
+#STATE_UT_ID=101
+
+# Chandigarh
+STATE_UT_ID=106
+
+#Dadara and Naga haveli
+#STATE_UT_ID=108
+
+#Daman and Diu
+#STATE_UT_ID=109
+
+#Lakshadweep
+#STATE_UT_ID=119
+
+
+
+# DMS File Location #
+DMS_FOLDER_PATH=D:/DMS_REPO/
+#DMS_FOLDER_PATH=\\home\\ubuntu\\DMS\\
+
+
+

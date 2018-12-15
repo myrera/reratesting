@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+  "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">  
+<tiles-definitions>  
+
+ 
+   <!-- Base Definition -->
+   <definition name="pubicDomain-definition-home" 
+       template="/jsppages/template/homepage/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="menu" value="/jsppages/template/homepage/defaultMenu.jsp" />  
+       <put-attribute name="header" value="/jsppages/template/homepage/defaultHeader.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="bfooter" value="/jsppages/template/homepage/defaultFooter.jsp" />  
+   </definition> 
+   
+      <definition name="publicDomain-definition-internalPage" 
+       template="/jsppages/template/publicdomain/layout/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/jsppages/template/publicdomain/defaultHeader.jsp" />  
+    <!--    <put-attribute name="banner" value="/jsppages/template/publicdomain/banner.jsp" />   -->
+       <put-attribute name="body" value="" />  
+       <put-attribute name="bfooter" value="/jsppages/template/publicdomain/defaultFooter.jsp" />  
+       
+   </definition>  
+   
+   
+  <definition name="publicdomain.loginpage" extends="pubicDomain-definition-home">  
+       <put-attribute name="title" value="Public Domain Page" />  
+      <put-attribute name="body" value="/jsppages/transaction/publicdomain/login.jsp" />  
+   </definition> 
+   
+   <definition name="publicdomain.newuser" extends="pubicDomain-definition-home">  
+       <put-attribute name="title" value="Registration" />   
+       <put-attribute name="body" value="/jsppages/transaction/publicdomain/newuser.jsp" />  
+   </definition>
+   
+     <definition name="publicdomain.registration" extends="pubicDomain-definition-home">  
+       <put-attribute name="title" value="Registration" />   
+       <put-attribute name="body" value="/jsppages/transaction/publicdomain/registrationSuccess.jsp" />  
+   </definition>
+    <definition name="projectList" extends="publicDomain-definition-internalPage">  
+       <put-attribute name="title" value="Registration" />   
+       <put-attribute name="body" value="/jsppages/transaction/publicdomain/allProjectList.jsp" />  
+   </definition>
+   
+ <definition name="publicdomain.projectIndvDetails" extends="publicDomain-definition-internalPage">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/publicdomain/approveProjectRegistration.jsp" />  
+   </definition> 
+   
+  <definition name="publicdomain.projectCompDetails" extends="publicDomain-definition-internalPage">  
+       <put-attribute name="title" value="Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/publicdomain/approveProjectFirmRegistration.jsp" />  
+   </definition> 
+   
+ 
+</tiles-definitions>

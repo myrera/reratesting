@@ -1,0 +1,38 @@
+package in.gov.rera.common.dao.impl;
+
+import org.springframework.stereotype.Repository;
+
+
+@Repository
+public class CommonDaoImpl<E,PK> extends GenericDAOImpl<Object, Long> implements CommonDao<Object,Long>{
+
+	
+	
+
+	@Override
+	public Object loadObject(Class c, Long pk) {
+		// TODO Auto-generated method stub
+
+		return getCurrentSession().load(c, pk);
+	}
+
+	@Override
+	public Object getObject(Class c, Long pk) {
+
+		// TODO Auto-generated method stub
+		 return getCurrentSession().get(c, pk);
+	}
+
+	@Override
+	public void updateObject(Object e) {
+		super.updateEntity(e);
+		
+	}
+
+	@Override
+	public void saveObject(Object e) {
+		super.createEntity(e);
+		
+	}
+
+}

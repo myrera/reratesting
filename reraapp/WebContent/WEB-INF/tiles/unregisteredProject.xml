@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+  "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">  
+<tiles-definitions>  
+   <!-- Base Definition -->
+    
+     <definition name="unReg-definition-internalPage" 
+   template="/jsppages/template/unregistered/template/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/jsppages/template/unregistered/template/defaultHeader.jsp" />  
+        <put-attribute name="banner" value="" /> 
+       <put-attribute name="body" value="" />  
+       <put-attribute name="bfooter" value="/jsppages/template/unregistered/template/defaultFooter.jsp" />
+       
+   </definition>  
+   
+   <definition name="unReg-definition-home" 
+       template="/jsppages/template/homepage/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="menu" value="/jsppages/template/homepage/defaultMenu.jsp" />  
+       
+       <put-attribute name="header" value="/jsppages/template/homepage/defaultHeader.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="bfooter" value="/jsppages/template/homepage/defaultFooter.jsp" />  
+       
+   </definition>  
+   
+	<definition name="unReg.unregProjectDetailsSaveForm" extends="unReg-definition-internalPage">
+		<put-attribute name="title" value="Unregistered project Details" />
+		<put-attribute name="body" value="/jsppages/transaction/unregistered/unregProjectDetailsSaveForm.jsp" />
+	</definition> 
+	
+	 <definition name="unReg.unregLoginPage" extends="unReg-definition-home">  
+       <put-attribute name="title" value="Login Page" />   
+       <put-attribute name="body" value="/jsppages/transaction/unregistered/unregLoginPage.jsp" />  
+   </definition>
+   
+    <definition name="unReg.viewAllProject" extends="unReg-definition-internalPage">  
+       <put-attribute name="title" value="All Project List" />  
+       <put-attribute name="body" value="/jsppages/transaction/unregistered/viewAllProject.jsp" />  
+   </definition>
+   
+    <definition name="unReg.unregisteredProjectDetails" extends="unReg-definition-internalPage">  
+       <put-attribute name="title" value="Unregistered Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/unregistered/unregisteredProjectDetails.jsp" />  
+   </definition>
+   <definition name="unReg.exemptOrRegProjectForm" extends="unReg-definition-internalPage">  
+       <put-attribute name="title" value="Unregistered Project Details" />  
+       <put-attribute name="body" value="/jsppages/transaction/unregistered/exemptOrRegProjectForm.jsp" />  
+   </definition>
+ 
+	
+</tiles-definitions>
